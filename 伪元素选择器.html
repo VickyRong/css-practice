@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪元素选择器</title>
+    <style type="text/css" rel="stylesheet">
+        .demo::before{
+            content: '';
+            display: inline-block;
+            width:10px;
+            height: 10px;
+            background: red;
+        }
+        .demo::after{
+            content: '';
+            display: inline-block;
+            width:10px;
+            height: 10px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+     <div class="demo">
+        伪元素
+     </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪类选择器</title>
+    <style type="text/css" rel="stylesheet">
+        input[type="email"]:valid{
+            border:1px solid green;
+        }
+        input[type="email"]:invalid{
+            border:1px solid red;
+        }
+        input[type="number"]:in-range{
+            border:1px solid green;
+        }
+        input[type="number"]:out-of-range{
+            border:1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="email"/>
+    <input type="number" min="5" max="10">  
+</body>
+</html>
