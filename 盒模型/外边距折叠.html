@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>盒模型</title>
+    <style type="text/css" rel="stylesheet">
+        body{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+            width: 200px;
+            height: 100px;
+            margin-bottom:10px;
+            background: pink;
+        }
+        .box2{
+            width: 200px;
+            height: 100px;
+            margin-top:20px;
+            background: #e91e63;
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            margin-bottom:-10px;
+            background: rgb(192, 237, 255);
+        }
+        .box4{
+            width: 200px;
+            height: 100px;
+            margin-top:20px;
+            background: #2196f3;
+        }
+        .box5{
+            width: 200px;
+            height: 100px;
+            margin-bottom:-10px;
+            background: #ffeb3b;
+        }
+        .box6{
+            width: 200px;
+            height: 100px;
+            margin-top:-20px;
+            background: #ff9800;
+        }
+        .father{
+            width: 100px;
+            height: 100px;
+            background: #03a9f4;
+            margin-top:10px;
+        }
+        .child1{
+            margin-top:50px;
+            width: 50px;
+            height: 50px;
+            background: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+    <h3>----相邻元素间外边距折叠(取两个相邻外边界的最大值，而非两者的总和)-----</h3>
+    <div class="box1">margin-bottom:10px;</div>
+    <div class="box2">margin-top:20px;</div>
+    <h3>----相邻元素间外边距折叠(包含负值)-----</h3>
+    <div class="box3">margin-bottom:-10px;</div>
+    <div class="box4">margin-top:20px;</div>
+    <h3>----相邻元素间外边距折叠(都是负值)-----</h3>
+    <div class="box5">margin-bottom:-10px;</div>
+    <div class="box6">margin-top:-20px;</div>
+
+    <h3>----父元素与其第一个或最后一个子元素之间-----</h3>
+    <div class="father">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+</body>
+</html>
